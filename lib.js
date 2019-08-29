@@ -1,11 +1,11 @@
 function calc(height) {
-    return (height - 100) * 0.8;
+    return (height * 0.01) * (height * 0.01) * 22;
   }
   
   // there is test script
   
-  const t1 = calc(180);
+  const t1 = calc(170);
   
-  if (t1 !== 64) {
+  if (t1 !== 63.6) {
     throw new Error('test failed');
   }
